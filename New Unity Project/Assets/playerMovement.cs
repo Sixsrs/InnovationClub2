@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
+    public float speed = 1f;
+    Vector2 myVel = new Vector2(0f, 0f);
     public Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
@@ -16,19 +18,37 @@ public class playerMovement : MonoBehaviour
     {
         if (Input.GetKeyDown("w"))
         {
-            rb.velocity = rb.velocity + new Vector2(0f, 1f);
+            myVel = myVel + new Vector2(0f, speed);
         }
         if (Input.GetKeyDown("s"))
         {
-            rb.velocity = rb.velocity + new Vector2(0f, -1f);
+            myVel = myVel + new Vector2(0f, -1f * speed);
         }
         if (Input.GetKeyDown("a"))
         {
-            rb.velocity = rb.velocity + new Vector2(-1f, 0f);
+            myVel = myVel + new Vector2(-1 * speed, 0f);
         }
         if (Input.GetKeyDown("d"))
         {
-            rb.velocity = rb.velocity + new Vector2(1f, 0f);
+            myVel = myVel + new Vector2(speed, 0f);
         }
+
+        if (Input.GetKeyUp("w"))
+        {
+            myVel = myVel + new Vector2(0f, speed * -1f);
+        }
+        if (Input.GetKeyUp("s"))
+        {
+            myVel = myVel + new Vector2(0f, speed);
+        }
+        if (Input.GetKeyUp("a"))
+        {
+            myVel = myVel + new Vector2(speed, 0f);
+        }
+        if (Input.GetKeyUp("d"))
+        {
+            myVel = myVel + new Vector2(-1 * speed, 0f);
+        }
+        rb.position = rb.position + myVel * .01f;
     }
 }
