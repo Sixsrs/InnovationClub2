@@ -18,7 +18,7 @@ public class spawnerScript : MonoBehaviour
         timer += 1;
         if ((timer % 30) == 0)
         {
-            Instantiate(enemy, new Vector3(0f, 0f, 0f), Quaternion.identity);
+            Instantiate(enemy, new Vector3(Random.Range(transform.position.x - transform.localScale.x/2f, transform.position.x + transform.localScale.x/2f), Random.Range(transform.position.y - transform.localScale.y / 2f, transform.position.y + transform.localScale.y / 2f), 0f), Quaternion.identity);
         }
         
     }
