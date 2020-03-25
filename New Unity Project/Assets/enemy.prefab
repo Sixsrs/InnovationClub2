@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8622387446471277001}
   - component: {fileID: 7261855536987442983}
   - component: {fileID: 9057596814024182110}
-  - component: {fileID: 8421671330415759103}
+  - component: {fileID: 7048305869989519156}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,16 +78,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &8421671330415759103
-BoxCollider:
+--- !u!114 &7048305869989519156
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1459664602596575357}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bbb307a957951c4abdb02bcd5a0507a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sightRadius: 8
+  attackRadius: 6
+  stopRadius: 6
+  speed: 0.03
+  player: {fileID: 0}

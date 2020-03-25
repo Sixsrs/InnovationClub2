@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ed79aa1f0c0054c98195e1f8d13473, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCapacity: 10
+  maxCapacity: 4
   tenSecondSpawn: 5
   spawnWhenPlayerPresent: 0
   enemy: {fileID: 1459664602596575357, guid: 5c26e7910fff59c4fbe23372bc3af37e, type: 3}

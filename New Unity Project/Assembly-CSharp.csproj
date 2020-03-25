@@ -63,6 +63,7 @@
     <Compile Include="Assets\bulletScript.cs" />
     <Compile Include="Assets\playerMovement.cs" />
     <Compile Include="Assets\spawnerScript.cs" />
+    <Compile Include="Assets\wolfScript.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/InnovationClub2/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
