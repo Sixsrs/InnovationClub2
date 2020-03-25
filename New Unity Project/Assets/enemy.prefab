@@ -90,8 +90,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bbb307a957951c4abdb02bcd5a0507a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sightRadius: 8
+  sightRadius: 10
   attackRadius: 6
-  stopRadius: 6
+  stopRadius: 1.75
   speed: 0.03
   player: {fileID: 0}
